@@ -1,0 +1,148 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+}
+.nav .brand img {
+  width: 80px;
+  border: 2px solid red;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+.navbar ul li a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: violet;
+}
+.slider img {
+  width: 30%;
+}
+.slider .left {
+  margin: 20px;
+}
+.slider .left button {
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: burlywood;
+}
+
+.article .articles {
+  display: flex;
+}
+.article .articles .article1, .article .articles .article2 {
+  width: 50%;
+  height: 200px;
+  background-color: coral;
+  border: 2px solid red;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+}
+.article .articles .article2 {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+
+.content .cards {
+  display: flex;
+}
+.content .cards .card1 {
+  background-color: burlywood;
+  color: white;
+  width: 20%;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+.content .cards .card2 {
+  background-color: cadetblue;
+  color: black;
+  width: 20%;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+.content .cards .card3 {
+  background-color: green;
+  color: white;
+  width: 20%;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+.content .cards .card4 {
+  background-color: red;
+  color: white;
+  width: 20%;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.footer {
+  background-color: greenyellow;
+}
+
+.container.pink {
+  background-color: rgb(190, 111, 111);
+}
+
+.container.red {
+  background-color: rgb(255, 5, 5);
+}
+
+.container.orange {
+  background-color: rgb(222, 107, 13);
+}
+
+.social1 {
+  background-color: #004356;
+}
+
+.social2 {
+  background-color: #990000;
+}
+
+.social3 {
+  background-color: #005500;
+}
+
+.social4 {
+  background-color: #456789;
+}
+
+.social5 {
+  background-color: #121456;
+}
+
+.social6 {
+  background-color: #145e13;
+}
+
+/*# sourceMappingURL=style.css.map */

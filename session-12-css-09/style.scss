@@ -1,0 +1,85 @@
+@import "navbar", "variables", "slider", "mixin", "extend";
+
+$arkafon:rgb(111,41,89);
+$linkboyutu: 20px;
+$borderrenk: 2px solid red;
+$buttonrenk: burlywood;
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.content{
+    .cards{
+        display: flex;
+
+    .card1{
+        @include kutu(burlywood, white);
+    }
+    .card2{
+        @include kutu(cadetblue, black);
+    }
+    .card3{
+        @include kutu(green, white);
+    }
+    .card4{
+        @include kutu(red, white);
+    }
+}
+}
+$test:2;
+.footer{
+    
+    @if $test>3 {
+        background-color:brown;
+    }
+
+    @else if $test<3 {
+        background-color:greenyellow;
+    }
+    @else {
+        background-color:pink;
+    }
+
+}
+
+// .socialBoxes{
+//     @for $i from 1 through 6 {
+//         .social#{$i}{
+//             width: 80px;
+//             height: 30px;
+//             $renk:($i+5)*20;
+//             background-color: rgb($renk, $renk,$renk);
+//             margin: 2px+($i*5) ;
+//         }
+
+//     } 
+// }
+
+// EACH LOOP DÖNGÜSÜ
+
+$temaRengi:(
+    "pink":rgb(190, 111, 111),
+    "red":rgb(255,5,5),
+    "orange":rgb(222, 107, 13)
+);
+
+@each $i,$renk in $temaRengi{
+    .container{
+        &.#{$i}{
+            background-color:$renk
+        }
+    }
+}
+
+// ARRAY     dizi,liste
+$renkler:#004356,#990000,#005500,#456789,#121456,#145e13,#546773;
+
+@for $i from 1 to length($renkler)
+{
+.social#{$i}{
+    background-color:nth($renkler,$i);
+}
+
+}

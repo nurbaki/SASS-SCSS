@@ -1,0 +1,27 @@
+.home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background:linear-gradient(to right,rgba($primary-color,0.9),rgba($primary-color,0.4)),   
+    url(../img/session-13-sass-02/img/model-1.jpg) center top;
+}
+    // & işareti bir üst tagi ifade eder &_name home_name anlamına gelir
+
+    .home{
+    &__name{
+        font-size: 5rem;
+        padding-top:1rem;
+        margin-bottom:1rem;
+        border-bottom:2px solid #fff;
+        width:100%;
+        text-align: center;  
+        &--last{
+            color:$secondary-color;
+            font-weight: 600;
+
+        }
+    }
+    }

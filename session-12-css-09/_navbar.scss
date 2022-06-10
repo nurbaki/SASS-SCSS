@@ -1,0 +1,32 @@
+@import "variables";
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:aqua;
+
+    .brand{
+        img{
+            width: 80px;
+            border: $borderrenk;
+            border-radius: 15px;
+            margin: 10px;
+
+
+        }
+    }
+
+}
+.navbar{
+    ul{
+        list-style-type: none ;
+        display: flex;
+        li{
+            a{
+                text-decoration: none;
+                padding: 5px;
+                color: black;
+            }
+        }
+    }
+}

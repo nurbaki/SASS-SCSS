@@ -1,0 +1,20 @@
+.projects{
+    &__bio-image{
+
+
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background:linear-gradient(to right,rgba($primary-color,0.9),rgba($primary-color,0.4)),   
+    url(../img/session-13-sass-02/img/model-1.jpg) center top;
+    }
+
+    &__bio{
+        width: 80%;
+
+    }
+}

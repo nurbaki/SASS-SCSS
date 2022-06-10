@@ -1,0 +1,21 @@
+@import "variables";
+
+.article{
+    .articles{
+        display: flex;
+        .article1{
+            width: 50%;
+            height: 200px;
+            background-color: coral;
+            border: $borderrenk;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 5px;
+        }
+        .article2{
+            @extend .article1;
+            text-align: center;
+            color: white;
+        }
+    }
+}
